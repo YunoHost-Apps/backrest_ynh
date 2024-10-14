@@ -28,7 +28,6 @@ Backrest is a web-accessible backup solution built on top of restic. Backrest pr
 
 ## 文档与资源
 
-- 官方应用网站： <https://github.com/garethgeorge/backrest>
 - 官方用户文档： <https://garethgeorge.github.io/backrest/introduction/getting-started>
 - 官方管理文档： <https://github.com/garethgeorge/backrest#installation>
 - 上游应用代码库： <https://github.com/garethgeorge/backrest>

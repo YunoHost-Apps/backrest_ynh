@@ -28,7 +28,6 @@ Backrest est une solution de sauvegarde accessible via une interface Web basée 
 
 ## Documentations et ressources
 
-- Site officiel de l’app : <https://github.com/garethgeorge/backrest>
 - Documentation officielle utilisateur : <https://garethgeorge.github.io/backrest/introduction/getting-started>
 - Documentation officielle de l’admin : <https://github.com/garethgeorge/backrest#installation>
 - Dépôt de code officiel de l’app : <https://github.com/garethgeorge/backrest>

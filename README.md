@@ -28,7 +28,6 @@ Backrest is a web-accessible backup solution built on top of restic. Backrest pr
 
 ## Documentation and resources
 
-- Official app website: <https://github.com/garethgeorge/backrest>
 - Official user documentation: <https://garethgeorge.github.io/backrest/introduction/getting-started>
 - Official admin documentation: <https://github.com/garethgeorge/backrest#installation>
 - Upstream app code repository: <https://github.com/garethgeorge/backrest>
