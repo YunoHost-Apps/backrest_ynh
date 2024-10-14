@@ -20,11 +20,6 @@ Backrest is a web-accessible backup solution built on top of restic. Backrest pr
 
 
 **Geleverde versie:** 1.5.1~ynh1
-
-## Schermafdrukken
-
-![Schermafdrukken van Backrest](./doc/screenshots/example.jpg)
-
 ## Documentatie en bronnen
 
 - Officiele website van de app: <https://github.com/garethgeorge/backrest>

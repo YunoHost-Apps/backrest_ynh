@@ -20,11 +20,6 @@ Backrest est une solution de sauvegarde accessible via une interface Web basée 
 
 
 **Version incluse :** 1.5.1~ynh1
-
-## Captures d’écran
-
-![Capture d’écran de Backrest](./doc/screenshots/example.jpg)
-
 ## Documentations et ressources
 
 - Site officiel de l’app : <https://github.com/garethgeorge/backrest>
