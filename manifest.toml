@@ -13,8 +13,7 @@ maintainers = ["DeMiro5001"]
 
 [upstream]
 # NB: Only the "license" key is mandatory. Remove entries for which there's no relevant data
-license = "GPL-3.0 license" # you can see the available licenses identifiers list here: https://spdx.org/licenses/
-website = "https://github.com/garethgeorge/backrest"
+license = "GPL-3.0-only" # you can see the available licenses identifiers list here: https://spdx.org/licenses/
 admindoc = "https://github.com/garethgeorge/backrest#installation"
 userdoc = "https://garethgeorge.github.io/backrest/introduction/getting-started"
 code = "https://github.com/garethgeorge/backrest"
@@ -30,12 +29,12 @@ multi_instance = false
 # FIXME: replace with true, false, or "not_relevant".
 # Not to confuse with the "sso" key: the "ldap" key corresponds to wether or not a user *can* login on the app using
 # its YunoHost credentials.
-ldap = "false"
+ldap = false
 
 # FIXME: replace with true, false, or "not_relevant".
 # Not to confuse with the "ldap" key: the "sso" key corresponds to wether or not a user is *automatically logged-in*
 # on the app when logged-in on the YunoHost portal.
-sso = "false"
+sso = false
 
 # FIXME: replace with an **estimate** minimum disk and RAM requirements. e.g. 20M, 400M, 1G...
 disk = "50M"
