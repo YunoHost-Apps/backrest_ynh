@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 User=__APP__
 Group=__APP__
-ExecStart=__INSTALL_DIR__
+ExecStart=__INSTALL_DIR__/backrest
 Environment="BACKREST_PORT=127.0.0.1:__PORT__"
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
