@@ -1,1 +1,1 @@
-Ceci est une fausse description des fonctionalités de l'app
+Backrest est une solution de sauvegarde accessible via une interface Web basée sur Restic. Backrest fournit une interface Web qui enveloppe la CLI restic et facilite la création de dépôts, la navigation dans les instantanés et la restauration de fichiers. De plus, Backrest peut s'exécuter en arrière-plan et adopter une approche avisée pour planifier des instantanés et orchestrer les opérations de santé des dépôts.
