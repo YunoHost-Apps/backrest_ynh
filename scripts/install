@@ -1,15 +1,7 @@
 #!/bin/bash
 
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
-
 source _common.sh
 source /usr/share/yunohost/helpers
-
-#=================================================
-# INITIALIZE AND STORE SETTINGS
-#=================================================
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -26,14 +18,12 @@ chown -R "$app:$app" "$install_dir"
 ynh_script_progression "Adding system configurations related to $app..."
 
 ynh_config_add_nginx
+
 ynh_config_add_systemd
-yunohost service add "$app" --description="Backrest" --log="/var/log/$app/$app.log"
+
+yunohost service add "$app" --description="Orchestrator for Restic backup" --log="/var/log/$app/$app.log"
+
 ynh_config_add_logrotate
-
-#=================================================
-# SETUP APPLICATION WITH CURL
-#=================================================
-
 
 #=================================================
 # START SYSTEMD SERVICE

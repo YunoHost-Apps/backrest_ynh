@@ -4,15 +4,15 @@ packaging_format = 2
 
 id = "backrest"
 name = "Backrest"
-description.en = "web UI and orchestrator for restic backup"
-description.fr = "interface Web et orchestrateur pour la sauvegarde restic"
+description.en = "web UI and orchestrator for Restic backup"
+description.fr = "interface Web et orchestrateur pour la sauvegarde Restic"
 
 version = "1.5.1~ynh1"
 
 maintainers = ["DeMiro5001"]
 
 [upstream]
-license = "GPL-3.0-only" 
+license = "GPL-3.0-only"
 admindoc = "https://github.com/garethgeorge/backrest#installation"
 userdoc = "https://garethgeorge.github.io/backrest/introduction/getting-started"
 code = "https://github.com/garethgeorge/backrest"
@@ -58,6 +58,8 @@ ram.runtime = "50M"
     [resources.system_user]
     
     [resources.install_dir]
+
+    [resources.data_dir]
 
     [resources.permissions]
     main.url = "/"
