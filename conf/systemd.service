@@ -1,5 +1,5 @@
 [Unit]
-Description=Small description of the service
+Description=Backrest: orchestrator for Restic backup
 After=network.target
 
 [Service]
@@ -7,7 +7,9 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/script
+Environment="BACKREST_PORT=127.0.0.1:__PORT__"
+Environment="BACKREST_DATA=__DATA_DIR__"
+ExecStart=__INSTALL_DIR__/backrest
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 
