@@ -28,7 +28,6 @@ ynh_config_add_logrotate
 setfacl -R -m u:backrest:rwx /home
 setfacl -R -m u:backrest:rwx /var
 
-
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
