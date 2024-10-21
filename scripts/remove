@@ -8,6 +8,9 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression "Removing system configurations related to $app..."
 
+setfacl -R -x u:backrest:rwx /home
+setfacl -R -x u:backrest:rwx /var
+
 ynh_config_remove_logrotate
 
 if ynh_hide_warnings yunohost service status "$app" >/dev/null; then
