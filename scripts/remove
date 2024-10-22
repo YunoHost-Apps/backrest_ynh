@@ -8,8 +8,7 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression "Removing system configurations related to $app..."
 
-setfacl -R -x u:backrest:rwx /home
-setfacl -R -x u:backrest:rwx /var
+setfacl -R -x u:backrest:rwx /home /var/lib/mysql /var/lib/postgresql /var/log /var/mail /var/www
 
 ynh_config_remove_logrotate
 
