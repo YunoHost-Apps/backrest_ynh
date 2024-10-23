@@ -7,7 +7,7 @@ name = "Backrest"
 description.en = "Web UI and orchestrator for Restic backup"
 description.fr = "Interface Web et orchestrateur pour la sauvegarde Restic"
 
-version = "1.5.1~ynh1"
+version = "1.5.1~ynh2"
 
 maintainers = ["DeMiro5001"]
 
