@@ -25,6 +25,8 @@ yunohost service add "$app" --description="Orchestrator for Restic backup" --log
 
 ynh_config_add_logrotate
 
+setfacl -R -m u:backrest:rwx /home /var/lib/mysql /var/lib/postgresql /var/log /var/mail /var/www
+
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
