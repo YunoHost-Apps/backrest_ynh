@@ -51,7 +51,7 @@ ram.runtime = "50M"
     arm64.sha256 = "4022015aa9e5c66ff1a04fb9342b3e312b190e4d07bbb444abd792a9d9976082"
     in_subdir = false
 
-    autoupdate.strategy = "latest_github_tag"
+    autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = ".*_linux_amd64.tar.gz"
     autoupdate.asset.arm64 = ".*_linux_arm64.tar.gz"
 
