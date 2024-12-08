@@ -5,7 +5,9 @@ Hij mag NIET handmatig aangepast worden.
 
 # Backrest voor Yunohost
 
-[![Integratieniveau](https://dash.yunohost.org/integration/backrest.svg)](https://ci-apps.yunohost.org/ci/apps/backrest/) ![Mate van functioneren](https://ci-apps.yunohost.org/ci/badges/backrest.status.svg) ![Onderhoudsstatus](https://ci-apps.yunohost.org/ci/badges/backrest.maintain.svg)
+[![Integratieniveau](https://apps.yunohost.org/badge/integration/backrest)](https://ci-apps.yunohost.org/ci/apps/backrest/)
+![Mate van functioneren](https://apps.yunohost.org/badge/state/backrest)
+![Onderhoudsstatus](https://apps.yunohost.org/badge/maintained/backrest)
 
 [![Backrest met Yunohost installeren](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=backrest)
 

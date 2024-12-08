@@ -5,7 +5,9 @@ Il NE doit PAS être modifié à la main.
 
 # Backrest pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/backrest.svg)](https://ci-apps.yunohost.org/ci/apps/backrest/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/backrest.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/backrest.maintain.svg)
+[![Niveau d’intégration](https://apps.yunohost.org/badge/integration/backrest)](https://ci-apps.yunohost.org/ci/apps/backrest/)
+![Statut du fonctionnement](https://apps.yunohost.org/badge/state/backrest)
+![Statut de maintenance](https://apps.yunohost.org/badge/maintained/backrest)
 
 [![Installer Backrest avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=backrest)
 

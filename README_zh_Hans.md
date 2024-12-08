@@ -5,7 +5,9 @@
 
 # YunoHost 上的 Backrest
 
-[![集成程度](https://dash.yunohost.org/integration/backrest.svg)](https://ci-apps.yunohost.org/ci/apps/backrest/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/backrest.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/backrest.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/backrest)](https://ci-apps.yunohost.org/ci/apps/backrest/)
+![工作状态](https://apps.yunohost.org/badge/state/backrest)
+![维护状态](https://apps.yunohost.org/badge/maintained/backrest)
 
 [![使用 YunoHost 安装 Backrest](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=backrest)
 

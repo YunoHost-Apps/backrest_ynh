@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Backrest untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/backrest.svg)](https://ci-apps.yunohost.org/ci/apps/backrest/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/backrest.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/backrest.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/backrest)](https://ci-apps.yunohost.org/ci/apps/backrest/)
+![Status kerja](https://apps.yunohost.org/badge/state/backrest)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/backrest)
 
 [![Pasang Backrest dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=backrest)
 
