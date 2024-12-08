@@ -5,7 +5,9 @@ EZ editatu eskuz.
 
 # Backrest YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/backrest.svg)](https://ci-apps.yunohost.org/ci/apps/backrest/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/backrest.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/backrest.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/backrest)](https://ci-apps.yunohost.org/ci/apps/backrest/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/backrest)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/backrest)
 
 [![Instalatu Backrest YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=backrest)
 

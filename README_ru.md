@@ -5,7 +5,9 @@
 
 # Backrest для YunoHost
 
-[![Уровень интеграции](https://dash.yunohost.org/integration/backrest.svg)](https://ci-apps.yunohost.org/ci/apps/backrest/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/backrest.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/backrest.maintain.svg)
+[![Уровень интеграции](https://apps.yunohost.org/badge/integration/backrest)](https://ci-apps.yunohost.org/ci/apps/backrest/)
+![Состояние работы](https://apps.yunohost.org/badge/state/backrest)
+![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/backrest)
 
 [![Установите Backrest с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=backrest)
 
