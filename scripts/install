@@ -25,8 +25,6 @@ yunohost service add "$app" --description="Orchestrator for Restic backup" --log
 
 ynh_config_add_logrotate
 
-mkdir -p /root/.config/backrest
-
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
