@@ -1,1 +1,1 @@
-__APP__ ALL=(root) NOPASSWD: __DATA_DIR__/restic, __INSTALL_DIR__/backrest
+__APP__ ALL=(root) NOPASSWD: __DATA_DIR__/restic*, __INSTALL_DIR__/backrest
