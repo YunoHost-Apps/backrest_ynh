@@ -17,8 +17,6 @@ ynh_backup "$install_dir"
 
 ynh_backup "$data_dir"
 
-ynh_backup "$config_dir"
-
 ynh_backup --src_path="/etc/sudoers.d/$app"
 
 #=================================================
