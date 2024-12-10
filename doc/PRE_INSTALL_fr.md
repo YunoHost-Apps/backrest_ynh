@@ -5,4 +5,4 @@ Au premier démarrage, Backrest vous demandera de créer un nom d'utilisateur et
 
 Note aux utilisateurs disposant de la version 1.5.1~ynh3 ou antérieure :
 
-> Le fichier de configuration sera déplacé de /root/.config/backrest/config.json vers /home/yunohost.app/backrest/config.json
+> Le fichier de configuration devra être manuellement déplacé de /root/.config/backrest/config.json vers /home/yunohost.app/backrest/config.json
