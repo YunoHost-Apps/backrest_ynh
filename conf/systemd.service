@@ -4,11 +4,12 @@ After=network.target
 
 [Service]
 Type=simple
-User=root
-Group=root
+User=__APP__
+Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
 Environment="BACKREST_PORT=127.0.0.1:__PORT__"
 Environment="BACKREST_DATA=__DATA_DIR__"
+Environment="BACKREST_CONFIG=__DATA_DIR__/config.json"
 ExecStart=__INSTALL_DIR__/backrest
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
