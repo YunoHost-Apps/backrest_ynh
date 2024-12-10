@@ -4,4 +4,4 @@ On first startup backrest will prompt you to create a default username and passw
 
 Note to users with version 1.5.1~ynh3 or older :
 
->config file will move from /root/.config/backrest/config.json to /home/yunohost.app/backrest/config.json 
+>Config file needs to be moved manually from /root/.config/backrest/config.json to /home/yunohost.app/backrest/config.json 
