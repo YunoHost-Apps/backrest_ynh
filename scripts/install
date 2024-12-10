@@ -19,7 +19,7 @@ ynh_script_progression "Adding system configurations related to $app..."
 
 ynh_config_add_nginx
 
-ynh_add_config --template="sudoer" --destination="/etc/sudoers.d/$app"
+ynh_config_add --template="sudoer" --destination="/etc/sudoers.d/$app"
 chown root:root "/etc/sudoers.d/$app"
 
 ynh_config_add_systemd
