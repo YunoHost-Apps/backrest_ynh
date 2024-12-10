@@ -9,7 +9,7 @@ Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
 Environment="BACKREST_PORT=127.0.0.1:__PORT__"
 Environment="BACKREST_DATA=__DATA_DIR__"
-ExecStart=__INSTALL_DIR__/backrest -config-file __DATA_DIR__/config.json
+ExecStart=/usr/bin/sudo __INSTALL_DIR__/backrest -config-file __DATA_DIR__/config.json
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 
