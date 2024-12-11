@@ -45,10 +45,10 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    amd64.url = "https://github.com/garethgeorge/backrest/releases/download/v1.5.1/backrest_Linux_x86_64.tar.gz"
-    amd64.sha256 = "6112ab5a8b213be3c8cb30a803ef989547f68dd962e3b709f5f2f27325f8a4ed"
-    arm64.url = "https://github.com/garethgeorge/backrest/releases/download/v1.5.1/backrest_Linux_arm64.tar.gz"
-    arm64.sha256 = "4022015aa9e5c66ff1a04fb9342b3e312b190e4d07bbb444abd792a9d9976082"
+    amd64.url = "https://github.com/garethgeorge/backrest/releases/download/v1.6.2/backrest_Linux_x86_64.tar.gz"
+    amd64.sha256 = "9eaecc313502195114922c6d6aaecc4fe3261b2d7e209994cc22aff2e74b3a20"
+    arm64.url = "https://github.com/garethgeorge/backrest/releases/download/v1.6.2/backrest_Linux_arm64.tar.gz"
+    arm64.sha256 = "182817c5e3011e14fadb0e062992d8c9f9332dd079e35bdf3e3a6b557f56cab6"
     in_subdir = false
 
     autoupdate.strategy = "latest_github_release"
