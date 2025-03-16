@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#=================================================
+# IMPORT GENERIC HELPERS
+#=================================================
+
 source _common.sh
 source /usr/share/yunohost/helpers
 
@@ -11,10 +15,16 @@ ynh_script_progression "Stopping $app's systemd service..."
 ynh_systemctl --service="$app" --action="stop"
 
 #=================================================
+# ENSURE DOWNWARD COMPATIBILITY
+#=================================================
+ynh_script_progression "Ensuring downward compatibility..."
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Upgrading source files..."
 
+# Download, check integrity, uncompress and patch the source from manifest.toml
 ynh_setup_source --dest_dir="$install_dir" --full_replace
 
 chown -R "$app:$app" "$install_dir"
@@ -26,14 +36,13 @@ ynh_script_progression "Upgrading system configurations related to $app..."
 
 ynh_config_add_nginx
 
-ynh_config_add --template="sudoer" --destination="/etc/sudoers.d/$app"
-chown root:root "/etc/sudoers.d/$app"
-
 ynh_config_add_systemd
-
 yunohost service add "$app" --description="Orchestrator for Restic backup" --log="/var/log/$app/$app.log"
 
 ynh_config_add_logrotate
+
+ynh_config_add --template="sudoer" --destination="/etc/sudoers.d/$app"
+chown root:root "/etc/sudoers.d/$app"
 
 #=================================================
 # START SYSTEMD SERVICE
