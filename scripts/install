@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#=================================================
+# IMPORT GENERIC HELPERS
+#=================================================
+
 source _common.sh
 source /usr/share/yunohost/helpers
 
@@ -8,6 +12,7 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression "Setting up source files..."
 
+# Download, check integrity, uncompress and patch the source from manifest.toml
 ynh_setup_source --dest_dir="$install_dir"
 
 chown -R "$app:$app" "$install_dir"
@@ -17,22 +22,25 @@ chown -R "$app:$app" "$install_dir"
 #=================================================
 ynh_script_progression "Adding system configurations related to $app..."
 
+# Create a dedicated NGINX config using the conf/nginx.conf template
 ynh_config_add_nginx
+
+# Create a dedicated systemd config
+ynh_config_add_systemd
+yunohost service add "$app" --description="Orchestrator for Restic backup" --log="/var/log/$app/$app.log"
+
+# Use logrotate to manage application logfile(s)
+ynh_config_add_logrotate
 
 ynh_config_add --template="sudoer" --destination="/etc/sudoers.d/$app"
 chown root:root "/etc/sudoers.d/$app"
-
-ynh_config_add_systemd
-
-yunohost service add "$app" --description="Orchestrator for Restic backup" --log="/var/log/$app/$app.log"
-
-ynh_config_add_logrotate
 
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
+# Start a systemd service
 ynh_systemctl --service="$app" --action="start"
 
 #=================================================

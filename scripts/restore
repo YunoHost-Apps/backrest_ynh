@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#=================================================
+# IMPORT GENERIC HELPERS
+#=================================================
+
+# Keep this path for calling _common.sh inside the execution's context of backup and restore scripts
 source ../settings/scripts/_common.sh
 source /usr/share/yunohost/helpers
 
@@ -17,9 +22,6 @@ ynh_script_progression "Restoring the data directory..."
 
 ynh_restore "$data_dir"
 
-ynh_config_add --template="sudoer" --destination="/etc/sudoers.d/$app"
-chown root:root "/etc/sudoers.d/$app"
-
 #=================================================
 # RESTORE SYSTEM CONFIGURATIONS
 #=================================================
@@ -28,7 +30,6 @@ ynh_script_progression "Restoring system configurations related to $app..."
 ynh_restore "/etc/nginx/conf.d/$domain.d/$app.conf"
 
 ynh_restore "/etc/systemd/system/$app.service"
-
 systemctl enable "$app.service" --quiet
 yunohost service add "$app" --description="Orchestrator for Restic backup" --log="/var/log/$app/$app.log"
 
@@ -37,6 +38,9 @@ ynh_restore "/etc/logrotate.d/$app"
 #=================================================
 # RESTORE VARIOUS FILES
 #=================================================
+
+ynh_config_add --template="sudoer" --destination="/etc/sudoers.d/$app"
+chown root:root "/etc/sudoers.d/$app"
 
 ynh_restore "/var/log/$app/"
 
