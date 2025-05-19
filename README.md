@@ -4,13 +4,13 @@ It shall NOT be edited by hand.
 -->
 
 <h1>
-  <img src="https://raw.githubusercontent.com/YunoHost/apps/master/logos/backrest.png" width="32px" alt="Logo of Backrest">
+  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/backrest.png" width="32px" alt="Logo of Backrest">
   Backrest, packaged for YunoHost
 </h1>
 
 Web UI and orchestrator for Restic backup
 
-![Version: 1.8.0~ynh1](https://img.shields.io/badge/Version-1.8.0~ynh1-rgba(0,150,0,1)?style=for-the-badge)
+[![Version: 1.8.1~ynh1](https://img.shields.io/badge/Version-1.8.1~ynh1-rgba(0,150,0,1)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/backrest/)
 
 <div align="center">
 <a href="https://apps.yunohost.org/app/backrest"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
@@ -18,6 +18,8 @@ Web UI and orchestrator for Restic backup
 </div>
 
 ## 📦 Developer info
+
+[![Automatic tests level](https://apps.yunohost.org/badge/cilevel/backrest)](https://ci-apps.yunohost.org/ci/apps/backrest/)
 
 🛠️ Upstream Backrest repository: <https://github.com/garethgeorge/backrest>
 
