@@ -7,7 +7,7 @@ name = "Backrest"
 description.en = "Web UI and orchestrator for Restic backup"
 description.fr = "Interface Web et orchestrateur pour la sauvegarde Restic"
 
-version = "1.11.2~ynh1"
+version = "1.12.0~ynh1"
 
 maintainers = ["DeMiro5001"]
 
@@ -48,10 +48,10 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    amd64.url = "https://github.com/garethgeorge/backrest/releases/download/v1.11.2/backrest_Linux_x86_64.tar.gz"
-    amd64.sha256 = "35b3ff9835ac77ee6d2986310a4f169418bea10c038351b88917438a23cd16f9"
-    arm64.url = "https://github.com/garethgeorge/backrest/releases/download/v1.11.2/backrest_Linux_arm64.tar.gz"
-    arm64.sha256 = "404e69e8827eee78ca3ab39377e02b959cbdf300baf41fd7203a3a62b44d2f2a"
+    amd64.url = "https://github.com/garethgeorge/backrest/releases/download/v1.12.0/backrest_Linux_x86_64.tar.gz"
+    amd64.sha256 = "df6ab22e0b4d8f10f5f8f050ffc4fa396908c66e8b5cb0e539c891239809d5dd"
+    arm64.url = "https://github.com/garethgeorge/backrest/releases/download/v1.12.0/backrest_Linux_arm64.tar.gz"
+    arm64.sha256 = "0009ca3d2ae8751b3601129346210e5e8121ac6e76a883d83336d32aaf22122d"
     in_subdir = false
 
     autoupdate.strategy = "latest_github_release"
