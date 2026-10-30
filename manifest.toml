@@ -63,6 +63,7 @@ ram.runtime = "50M"
     [resources.install_dir]
 
     [resources.data_dir]
+    subdirs = ['yunohost']
 
     [resources.permissions]
     main.url = "/"
