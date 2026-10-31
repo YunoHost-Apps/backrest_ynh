@@ -1,1 +1,1 @@
-__APP__ ALL=(root) NOPASSWD: __DATA_DIR__/restic*, __INSTALL_DIR__/backrest
+__APP__ ALL=(root) NOPASSWD: __DATA_DIR__/restic*, __INSTALL_DIR__/backrest, /usr/bin/yunohost backup create --methods copy -o /home/yunohost.backup/unpacked/ *, /usr/bin/chown -R __APP__\:__APP__ /home/yunohost.backup/unpacked/, /bin/rm -Rf /home/yunohost.backup/unpacked/*
